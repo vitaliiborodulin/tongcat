@@ -1,0 +1,101 @@
+//странная палка сбоку - доработать
+
+.use {
+    padding-top: 38px;
+    padding-bottom: 50px;
+    min-height: 478px;
+    // background-color: #b8b8b8;
+    background-image: linear-gradient(-243deg, #1883cd 0%, #3fd8cf 100%);
+}
+
+.use__content {
+    position: relative;
+    color: #ffffff;
+    .row-flex();
+}
+
+.use__img {
+    position: absolute;
+    top: -21%;
+    left: 0;
+    .lg-block({
+        display: none;
+    });
+}
+
+.use__text {
+   .col();
+   .size(9);
+   .shift-left(3);
+   .size-lg(12);
+   .shift-lg-left(0);
+}
+
+.use__title {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.use__doze {
+    margin-bottom: 23px;
+    padding-top: 92px;
+    // text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    .md-block({
+        font-size: 24px;
+        line-height: 30px;
+    });
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    background: url(../img/use-doze.png) no-repeat top center;
+    .sm(background-size, contain);
+}
+
+.use__item {
+    display: flex;
+    justify-content: space-between;
+    .md(justify-content,space-around);
+}
+
+// .use__weight {
+//     margin-right: 130px;
+// }
+
+// .use__list li:last-child .use__weight {
+//     margin-right: 98px;
+// }
+
+
+.use__consult {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .md-block({
+        align-items: center;
+        justify-content: space-evenly;
+    });
+}
+
+.use__consult-img {
+    display: none;
+    width: 120px;
+    margin-bottom: 20px;
+    .md(display, block);
+}
+
+.use__callback {
+    width: 400px;
+    font-size: 18px;
+    line-height: 24px;
+    .md-block({
+        width: 220px;
+    });
+}
+

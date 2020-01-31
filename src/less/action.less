@@ -1,0 +1,146 @@
+.action {
+
+    padding: 70px 0;
+}
+
+.action__header {
+    margin-bottom: 20px;
+    font-size: 36px;
+    .md-block({
+        font-size: 30px;
+        line-height: 36px;
+    });
+    font-weight: 500; 
+    span {
+        color: #3fd8cf;
+    }   
+}
+
+.action__subtitle {
+    margin-bottom: 34px;
+    text-align: center;
+    color: #202020;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+}
+
+.action__subsubtitle {
+    margin-bottom: 60px;
+    text-align: center;
+    color: #122476;
+    font-size: 18px;
+    letter-spacing: 0.45px;
+}
+
+.action__content {
+    // margin-bottom: 54px;
+    .row-flex();
+    justify-content: space-around;
+    background-image: url(../img/act-main.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+    .md-block({
+        padding-top: 300px;
+        background-position: 55% 0;
+    });
+}
+
+.action__item {
+    margin-bottom: 40px;
+    .col();
+    .size(4);
+    .size-md(12);
+    .md-block({
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    });
+    // width: 623px;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+        .action__img {
+            margin-left: auto;
+        }
+        text-align: right;
+        .md(text-align, left);
+    }
+
+    &:nth-child(2) {
+        .shift-left(4);
+        .shift-md-left(0);
+    }
+
+    &:nth-child(3) {
+        .size(6);
+        .size-md(12);
+        flex-direction: row;
+        align-items: center;
+        .action__img {
+            flex-shrink: 0;
+        }
+    }
+
+    // &:last-child {
+    //     width: 623px;
+    //     flex-direction: row;
+    // }
+}
+
+.action__img {
+    margin-bottom: 26px;
+    width: 184px;
+    height: 184px;
+    .md-block({
+        width: 170px;
+        height: 170px;
+        flex-shrink: 0;
+    });
+    .xs-block({
+        width: 120px;
+        height: 120px;
+    })
+}
+
+.action__text-wrapper {
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.action__title {
+    margin-bottom: 13px;
+    font-size: 20px;
+    .md-block({
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    });
+    font-weight: 700;
+    color: #3fd8cf;
+}
+
+.action__text {
+    line-height: 30px;
+    .md-block({
+        font-size: 16px;
+        line-height: 24px;
+    })
+}
+
+.action__footer {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    span {
+        &:first-child {
+            text-decoration: underline;
+        }
+        &:last-child {
+            color: #3fd8cf;
+        }
+    }
+}

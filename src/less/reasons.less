@@ -1,0 +1,61 @@
+.reasons {
+    padding-top: 50px;
+}
+
+.reasons__header {
+    margin-bottom: 82px;
+    .sm-block({
+        margin-bottom: 40px;
+        line-height: 36px;
+    });
+    line-height: 48px;
+}
+
+.reasons__content {
+    align-items: center;
+    .row-flex();
+}
+
+.reasons__list {
+    .col();
+    .size(6);
+    .size-sm(12);
+    height: 600px;
+    .sm(height, 380px );
+    // overflow-y: scroll;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.reasons__item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 23px;
+
+    &::before {
+        content: '\2714';
+        position: absolute;
+        left: 0;
+        top: -23px;
+        color: #7fdd4d;//на айфоне цвет стандарт
+        font-size: 50px;
+    }
+}
+
+.reasons__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.reasons__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.reasons__img {
+    .col();
+    .size(6);
+    .size-sm(12);
+    text-align: center;
+}

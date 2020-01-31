@@ -1,0 +1,87 @@
+.mission {
+    padding-top: 100px;
+    padding-bottom: 65px;
+    .sm-block({
+        padding-top: 80px;
+        padding-bottom: 20px;
+    })
+}
+
+.mission__header {
+    margin-bottom: 72px;
+    .md(margin-bottom, 22px);
+}
+
+.mission__content {
+    align-items: center;
+    .row-flex();
+}
+
+.mission__img {//приклеить фотку к краям
+    text-align: center;
+    .md(margin-bottom, 32px);
+    
+    .col();
+    .size(6);
+    .size-md(12);
+
+    // img {
+    //     .sm-block({
+    //         margin-right: -15px;
+    //         margin-left: -15px;
+    //         // max-width: unset;
+    //     });
+    // }
+
+}
+
+.mission__text {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 82px;
+    padding-left: 45px;
+    .md(padding-left, 0px);
+
+    .col();
+    .size(6);
+    .size-md(12);
+    // .size-sm(1);
+
+    &::before{
+        content: '';
+        width: 31px;
+        height: 24px;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        background-image: url(../img/mission-before.png);
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: '';
+        width: 30px;
+        height: 24px;
+        position: absolute;
+        bottom: 55px;
+        right: 45%;
+        background-image: url(../img/mission-after.png);
+        background-repeat: no-repeat;
+    }
+
+    p {
+        // width: 507px;
+        color: #202020;
+        font-size: 24px;
+        line-height: 36px;
+        .sm-block({
+            font-size: 18px;
+            line-height: 24px;
+        });
+        letter-spacing: 0.6px;
+
+        &:first-child {
+            margin-bottom: 35px;
+        }
+    }
+}

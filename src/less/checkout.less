@@ -1,0 +1,65 @@
+//странная палка сбоку - доработать
+
+.checkout {
+    padding-top: 69px;
+    min-height: 305px;
+    // background-color: #b8b8b8;
+    background-image: linear-gradient(-243deg, #1883cd 0%, #3fd8cf 100%);
+}
+
+.checkout__content {
+    position: relative;
+    .row-flex();
+}
+
+.checkout-img {
+    position: absolute;
+    top: -64%;
+    left: 0;
+    .md-block({
+        top: -30%;
+        left: -7%;
+    });
+    .sm-block({
+        top: -40%;
+        left: -27%;
+    });
+}
+
+.checkout-form {
+    .col();
+    .size(9);
+    .shift-left(3);
+    // padding-left: 300px;
+    p {
+        margin-bottom: 63px;
+        // text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+        .sm-block({
+            font-size: 20px;
+            margin-bottom: 30px;
+        });
+        font-weight: 500;
+        text-decoration: underline;
+        letter-spacing: 0.75px;
+    }
+}
+
+.checkout-input {
+    margin-right: 22px;
+    margin-bottom: 13px;
+    width: 450px;
+    .md(width, 95%);
+    padding: 15px 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.checkout-btn {
+    .md-block({
+        margin-bottom: 60px;
+        width: 95%;
+    });
+}
