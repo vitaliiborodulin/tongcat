@@ -83,12 +83,11 @@
                     <img src="img/tablets.png" alt="tongcat">
                 </div>
 
-                <form class="hero__form" method="post" action="feedback.php">
+                <form class="hero__form" method="post" action="feedback.php" id="top-rus" onsubmit="us_client.sendForm('4e173360965b4358cfdb8bcdff37490a', '#top-rus', 'tel');" >
                     <p>Заказать за 60000 сум!
                         <span>УСПЕЙ ДО КОНЦА АКЦИИ</span></p>
-                    <input type="tel" name="tel" placeholder="Телефон" value="" required>
+                    <input type="tel" name="tel" placeholder="Телефон" required>
                     <button class="btn hero__btn">Заказать</button>
-                    <small></small>
                 </form>
 
             </div>
@@ -555,11 +554,10 @@
                     <div class="checkout-img">
                         <img src="img/tablets-checkout.png" alt="Tongcat">
                     </div>
-                    <form class="checkout-form form" id="checkout-form" method="post" action="feedback.php">
+                    <form class="checkout-form form" id="checkout-form" method="post" action="feedback.php" onsubmit="us_client.sendForm('4e173360965b4358cfdb8bcdff37490a', '#checkout-form', 'tel');" >
                         <p>Оставьте телефон для заказа</p>
-                        <input class="checkout-input" type="tel" name="tel" placeholder="Ваш Телефон" value="" required>
+                        <input class="checkout-input" type="tel" name="tel" placeholder="Ваш Телефон" required>
                         <button class="btn checkout-btn">Заказать</button>
-                        <small></small>
                     </form>
 
                 </div>
@@ -575,7 +573,7 @@
             <div class="mission__content">
 
                 <div class="mission__img">
-                    <img src="img/mission-picture.jpg" alt="mission-image">
+                    <img src="img/mission-picture-1.jpg" alt="mission-image">
                 </div>
 
                 <div class="mission__text">
@@ -623,12 +621,11 @@
                     <img src="img/tablets.png" alt="tongcat">
                 </div>
 
-                <form class="hero__form" method="post" action="feedback.php">
+                <form class="hero__form" id="bottom-rus" method="post" action="feedback.php" onsubmit="us_client.sendForm('4e173360965b4358cfdb8bcdff37490a', '#bottom-rus', 'tel');" >
                     <p>Заказать за 60000 сум!
                         <span>УСПЕЙ ДО КОНЦА АКЦИИ</span></p>
                     <input type="tel" name="tel" placeholder="Телефон" required>
                     <button class="btn hero__btn">Заказать</button>
-                    <small></small>
                 </form>
 
             </div>
@@ -650,7 +647,47 @@
 
     <script src="js/script.js"></script>
 
-    <!-- Yandex.Metrika counter -->
+    <!-- BEGIN OF UTMSTAT.COM CODE FOR ТОНГКАТ -->
+
+<script type="text/javascript">
+
+    var utmStatConf = {projectId: "7ad846b6873d429f3fdc366df17a8dd7", replaceTextElements: [], hasJivosite: false, hasMetrika: true, hasAnalytics: true, useCookieSync: true};
+    
+    (function (u, t, m) {
+    
+    var s = u.createElement(t), n = u.getElementsByTagName(t)[0];
+    
+    s.type = "text/javascript";
+    
+    s.async = true;
+    
+    s.src = m + "?v=" + Date.now();
+    
+    n.parentNode.insertBefore(s, n);
+    
+    })(document, "script", "//static.utmstat.com/client.min.js");
+    
+    </script>
+    
+    <!-- END OF UTMSTAT.COM CODE FOR ТОНГКАТ -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157033889-1"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-157033889-1');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
 
 <script type="text/javascript" >
 
@@ -677,6 +714,40 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/57099124" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     
     <!-- /Yandex.Metrika counter -->
+
+<!-- Facebook Pixel Code -->
+
+<script>
+
+    !function(f,b,e,v,n,t,s)
+    
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '2571721279771425');
+    
+    fbq('track', 'PageView');
+    
+    </script>
+    
+    <noscript><img height="1" width="1" style="display:none"
+    
+    src="https://www.facebook.com/tr?id=2571721279771425&ev=PageView&noscript=1"
+    
+    /></noscript>
+    
+    <!-- End Facebook Pixel Code -->
     
 </body>
 
